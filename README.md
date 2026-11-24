@@ -1,9 +1,12 @@
-# 本地文件批量重命名工具
+<img width="1175" height="940" alt="image" src="https://github.com/user-attachments/assets/2b7bd652-496b-42ab-8bea-5ba01e1d88eb" /># 本地文件批量重命名工具
 
 # 直接双击启动，浏览目标文件夹，添加规则执行就好，有实时预览，非常方便
 
 一个**完全在本机运行**的文件批量重命名工具，**不上传任何文件、不依赖任何第三方包**，所有改名操作都在你电脑上完成。
 
+<img width="1175" height="940" alt="image" src="https://github.com/user-attachments/assets/f6112577-ca7a-4e0d-a333-689bf51fef7a" />
+
+<img width="1175" height="940" alt="image" src="https://github.com/user-attachments/assets/33447f7f-c0f4-48ef-87cf-7a0977f3538b" />
 
 ## 改名方法（12 种）
 
@@ -32,24 +35,6 @@
 
 > 规则顺序很重要：例如「加前缀」后再「编号(替换)」与先「编号」再「加前缀」结果不同。
 
-## 运行方式
-
-### Windows
-双击 `start.bat`；或在 `file-renamer` 目录执行：
-```bat
-python server.py
-```
-然后浏览器打开 http://127.0.0.1:8765
-
-### macOS / Linux
-```bash
-cd file-renamer
-python3 server.py
-# 打开 http://127.0.0.1:8765
-```
-
-> 需要 Python 3.8+（仅用标准库，无需 pip install 任何东西）。
-
 ## 使用流程
 
 1. 在「① 选择文件夹」填入**绝对路径**（可勾选包含子文件夹），点「扫描文件」。
@@ -64,13 +49,3 @@ python3 server.py
 - 扫描和预览阶段**只读取**文件名与元数据，不会写盘。
 - 应用前必须确认弹窗；存在冲突或会覆盖现有文件时默认**阻止**操作（覆盖情况会询问后继续）。
 - 撤销备份默认写入系统临时目录（`%LOCALAPPDATA%\FileRenamer\undo\`），**不会出现在你的目标文件夹**；如不需要，取消「生成撤销备份」勾选即可完全不留文件。
-
-## 文件结构
-
-```
-file-renamer/
-├── server.py     # 后端：目录扫描、改名引擎、API（纯标准库）
-├── index.html    # 前端：规则编辑、实时预览、撤销（纯原生 JS）
-├── start.bat     # Windows 一键启动
-└── README.md
-```
