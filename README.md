@@ -1,10 +1,8 @@
-<img width="1175" height="940" alt="image" src="https://github.com/user-attachments/assets/2b7bd652-496b-42ab-8bea-5ba01e1d88eb" /># 本地文件批量重命名工具
+# 本地文件批量重命名工具
 
 # 直接双击启动，浏览目标文件夹，添加规则执行就好，有实时预览，非常方便
 
 一个**完全在本机运行**的文件批量重命名工具，**不上传任何文件、不依赖任何第三方包**，所有改名操作都在你电脑上完成。
-
-<img width="1175" height="940" alt="image" src="https://github.com/user-attachments/assets/f6112577-ca7a-4e0d-a333-689bf51fef7a" />
 
 <img width="1175" height="940" alt="image" src="https://github.com/user-attachments/assets/33447f7f-c0f4-48ef-87cf-7a0977f3538b" />
 
